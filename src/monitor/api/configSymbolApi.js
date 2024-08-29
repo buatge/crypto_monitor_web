@@ -11,3 +11,7 @@ export const addSymbol = (symbol) => {
 export const deleteSymbol = (symbol) => {
     return request.post(`/monitor/remove_config_symbol`, {symbol: symbol});
 };
+
+export const subscribeNewSymbol = (symbol) => {
+    return request.post(`/monitor/subscribe_new_symbol`, {symbol: symbol});
+}
