@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Typography, TextField, Button, Box } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
-import { login } from '../api/authService'; // Import API service
+import { login } from '../api/authService';
 
 function LoginPage() {
     const [username, setUsername] = useState('');
@@ -10,9 +10,10 @@ function LoginPage() {
 
     const handleLogin = async () => {
         try {
-            const data = await login(username, password);
-            localStorage.setItem('authToken', data.token);
-            navigate('/symbol-configuration');
+            await login(username, password);
+            localStorage.setItem('user_id', username);
+            console.log("login success, run to /symbol-configuration")
+            navigate('/');
         } catch (error) {
             alert(error.message);
         }
