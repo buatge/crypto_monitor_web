@@ -156,7 +156,7 @@ function SymbolConfiguration() {
                                 }}/>
                             </div>
                             <div style={{fontSize: '0.8rem', color: '#888', marginTop: '4px'}}>
-                                {/*{new Date(item.latest_time).toLocaleString()}*/}
+                                {new Date(item.latest_time).toLocaleString()}
                             </div>
                             {hoveredSymbol === item.symbol && (
                                 <DeleteIcon
