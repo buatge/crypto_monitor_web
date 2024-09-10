@@ -1,0 +1,76 @@
+.data-display {
+
+}
+
+.trend-line-chart {
+    width: 100%;
+}
+
+.trend-dashboard {
+    background-color: #26295d;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    font-family: Arial, sans-serif;
+    width: 400px;
+
+}
+
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.dashboard-header h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.dashboard-header p {
+    font-size: 12px;
+    margin: 0;
+}
+
+.dashboard-content {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.timeframes {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+    color: #bbb;
+}
+
+.trend-row {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.currency {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.trend-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.green {
+    background-color: #00FF00;
+}
+
+.red {
+    background-color: #FF0000;
+}
+
+.gray {
+    background-color: darkgray;
+}
